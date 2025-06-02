@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pal-grey: #383e42;
+  --color-pal-dark: #1c1f21;
+  --color-pal-blue: #084063;
+  --color-pal-red: #fa8072;
+  --color-pal-ocher: #b3a998;
+  --color-pal-white: #e1e0de;
+}
