@@ -23,17 +23,25 @@ export default function Home() {
             </div>
           </div>
           <AutoCarousel />
+          <h1 className="[font-family:'Inter-Regular',Helvetica] font-normal text-white text-xl tracking-[0] leading-[16.8px mt-4">
+            Comida Callejera
+          </h1>
+          <p className="[font-family:'Inter-Regular',Helvetica] font-normal text-white text-xs tracking-[0] leading-[16.8px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum
+          </p>
           {/* testimonies pictures */}
           <div className="absolute w-[123px] h-[35px] top-[560px] left-12">
             <div className="relative h-[35px]">
               <div className="absolute w-[35px] h-[35px] top-0 left-0 bg-[#d9d9d9] rounded-[200px] border border-solid border-white" />
-
               <div className="absolute w-[35px] h-[35px] top-0 left-[22px] bg-[#d9d9d9] rounded-[200px] border border-solid border-white" />
-
               <div className="absolute w-[35px] h-[35px] top-0 left-11 bg-[#d9d9d9] rounded-[200px] border border-solid border-white" />
-
               <div className="absolute w-[35px] h-[35px] top-0 left-[66px] bg-[#d9d9d9] rounded-[200px] border border-solid border-white" />
-
               <div className="absolute w-[35px] h-[35px] top-0 left-[88px] bg-[#d9d9d9] rounded-[200px] border border-solid border-white" />
             </div>
           </div>
