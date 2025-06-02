@@ -1,5 +1,5 @@
 import AutoCarousel from "@/components/AutoCarousel";
-import { FaInstagram } from "react-icons/fa";
+import { BurgerMenu } from "@/components/BurgerMenu";
 
 export default function Home() {
   return (
@@ -9,19 +9,7 @@ export default function Home() {
         {/* background  */}
         <div className="min-h-full min-w-full bg-pal-grey flex flex-col justify-top">
           {/* top menu */}
-          <div className="h-16 min-h-full flex justify-around content-center border-2 border-x-0 bg-pal-dark">
-            <div className="flex flex-col w-5 justify-center gap-1">
-              <div className="w-full h-0.5 bg-[#d9d9d9]" />
-              <div className="w-full h-0.5 bg-[#d9d9d9]" />
-              <div className="w-full h-0.5 bg-[#d9d9d9]" />
-            </div>
-            <div className="[font-family:'Coda_Caption-ExtraBold',Helvetica] font-extrabold text-white text-[28px] content-center">
-              CARBÓN GURU
-            </div>
-            <div className="flex items-center justify-center">
-              <FaInstagram size={28} color="white" className="align-middle" />
-            </div>
-          </div>
+          <BurgerMenu />
           <AutoCarousel />
           <h1 className="[font-family:'Inter-Regular',Helvetica] font-normal text-white text-xl tracking-[0] leading-[16.8px mt-4">
             Comida Callejera
