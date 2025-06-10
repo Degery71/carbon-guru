@@ -15,7 +15,7 @@ export const BurgerMenu = () => {
   const links = ["Link", "Link2", "Link3"];
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col w-full">
       <div className="h-16 min-h-full flex justify-around content-center border-b-2 bg-pal-dark sticky top-0 z-20">
         {/* Burger Logo */}
         <div
