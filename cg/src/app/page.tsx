@@ -13,10 +13,10 @@ export default function Home() {
           {/* top menu */}
           <BurgerMenu />
           <AutoCarousel />
-          <h1 className="[font-family:'Inter-Regular',Helvetica] font-normal text-white text-xl tracking-[0] leading-[16.8px mt-4">
-            Comida Callejera
+          <h1 className="font-normal text-white text-xl tracking-[0] leading-[16.8px mt-4">
+            COMIDA CALLEJERA
           </h1>
-          <p className="[font-family:'Inter-Regular',Helvetica] font-normal text-white text-xs tracking-[0] leading-[16.8px] mx-4 mb-4">
+          <p className="font-normal text-white text-xs tracking-[0] leading-[16.8px] mx-4 mb-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -26,7 +26,7 @@ export default function Home() {
             culpa qui officia deserunt mollit anim id est laborum
           </p>
           {/* Perhaps we could put a picture of the kitchen and chefs */}
-          <div className="w-80 h-44 mt-2 relative aspect-auto md:aspect-video rounded-xl overflow-hidden border-2 flex justify-center my-4">
+          <div className="w-80 h-44 relative aspect-auto md:aspect-video rounded-xl overflow-hidden border-2 flex justify-center my-4">
             <Image
               src="/pincho.jpg"
               fill={true}
@@ -35,7 +35,7 @@ export default function Home() {
             />
             {/* Text overlay (always visible) */}
             <Link
-              href={"/card"}
+              href={"/carta"}
               className="absolute inset-0 flex items-center justify-center"
             >
               <p className="text-white font-bold text-xl bg-black/50 px-4 py-2 rounded-lg">
@@ -43,6 +43,18 @@ export default function Home() {
               </p>
             </Link>
           </div>
+          <h1 className="font-normal text-white text-xl tracking-[0] leading-[16.8px mt-4">
+            QUIENES SOMOS
+          </h1>
+          <p className="font-normal text-white text-xs tracking-[0] leading-[16.8px] mx-4 mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum
+          </p>
         </div>
       </div>
     </>

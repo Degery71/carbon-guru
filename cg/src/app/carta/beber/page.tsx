@@ -1,6 +1,4 @@
 import { BurgerMenu } from "@/components/BurgerMenu";
-import Image from "next/image";
-import Link from "next/link";
 
 export default function Card() {
   return (
@@ -11,11 +9,11 @@ export default function Card() {
         <div className="min-h-full min-w-full bg-pal-grey flex flex-col items-center">
           {/* top menu */}
           <BurgerMenu />
-          <div className="m-4 flex flex-col border-2 items-center">
+          <div className="m-4 flex flex-col items-center">
             <div className="[font-family:'Coda_Caption-ExtraBold',Helvetica] font-extrabold text-white text-[28px] ">
               CARTA
             </div>
-            <div className="flex flex-wrap justify-center content-center gap-8">
+            {/* <div className="flex flex-wrap justify-center content-center gap-8">
               <Link href={"/pinchos"} className="contain-content">
                 <Image
                   src="/pincho1.jpg"
@@ -64,7 +62,7 @@ export default function Card() {
                   alt="Para Beber"
                 />
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
