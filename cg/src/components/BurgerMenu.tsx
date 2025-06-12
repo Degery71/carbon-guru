@@ -12,7 +12,7 @@ export const BurgerMenu = () => {
     setIsOpen(!isOpen);
   };
   // anchors to different parts of the text
-  const links = ["Link", "Link2", "Link3"];
+  const links = ["Carta", "Link2", "Link3"];
 
   return (
     <div className="flex flex-col w-full">
@@ -45,12 +45,12 @@ export const BurgerMenu = () => {
         </Link>
       </div>
       {isOpen && (
-        <div className="flex flex-col justify-center content-center text-center">
+        <div className="flex flex-col justify-center content-center text-center bg-pal-dark">
           {links.map((link: string) => (
             <Link
               key={link}
               className=" font-extrabold text-white text-[28px] border-b-2 border-black"
-              href={`#${link}`}
+              href={`${link.toLowerCase()}`}
             >
               {link}
             </Link>
