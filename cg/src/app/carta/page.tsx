@@ -26,7 +26,7 @@ export default function Carta() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="flex-[1_0_calc(50%-8px)] sm:flex-[1_0_calc(33.333%-11px)] md:flex-[1_0_calc(25%-12px)] lg:flex-[1_0_calc(16.666%-13px)] aspect-square max-w-[400px]"
+                className="flex-[1_0_calc(100%)] sm:flex-[1_0_calc(50%-8px)] md:flex-[1_0_calc(33.333%-12px)] lg:flex-[1_0_calc(25%-12px)] aspect-square max-w-[350px]"
               >
                 <div className="relative w-full h-full overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:z-10">
                   <Image
