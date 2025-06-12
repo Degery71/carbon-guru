@@ -50,7 +50,7 @@ export const BurgerMenu = () => {
             <Link
               key={link}
               className=" font-extrabold text-white text-[28px] border-b-2 border-black"
-              href={`${link.toLowerCase()}`}
+              href={`/${link.toLowerCase()}`}
             >
               {link}
             </Link>

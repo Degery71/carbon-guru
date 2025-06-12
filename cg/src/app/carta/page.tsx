@@ -2,7 +2,7 @@ import { BurgerMenu } from "@/components/BurgerMenu";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Card() {
+export default function Carta() {
   const menuItems = [
     { href: "/carta/pinchos", src: "/pincho1.jpg", alt: "Pinchos" },
     { href: "/carta/compartir", src: "/compartir.png", alt: "Para Compartir" },

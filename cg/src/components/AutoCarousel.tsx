@@ -4,7 +4,6 @@ import Image from "next/image";
 
 const AutoCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-
   const images = ["/1.jpg", "/2.jpg", "/3.jpg"];
 
   const goToNextSlide = useCallback(() => {
@@ -25,8 +24,7 @@ const AutoCarousel = () => {
   }, [goToNextSlide]);
 
   return (
-    <div className="relative w-full h-[300px] overflow-hidden">
-      {" "}
+    <div className="relative w-full aspect-video max-h-[70vh] overflow-hidden">
       <div
         className="flex transition-transform duration-700 ease-in-out h-full"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -38,18 +36,22 @@ const AutoCarousel = () => {
               alt={`Slide ${index + 1}`}
               fill
               className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 60vw"
+              priority={index === 0}
             />
           </div>
         ))}
       </div>
+
+      {/* Navigation buttons */}
       <button
         onClick={goToPrevSlide}
-        className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/30 text-white p-2 rounded-full"
+        className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-black/30 text-white p-3 md:p-2 rounded-full hover:bg-black/50 transition-colors"
+        aria-label="Previous slide"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-4 w-4"
+          className="h-5 w-5 md:h-4 md:w-4"
           viewBox="0 0 24 24"
           fill="white"
         >
@@ -58,25 +60,29 @@ const AutoCarousel = () => {
       </button>
       <button
         onClick={goToNextSlide}
-        className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/30 text-white p-2 rounded-full"
+        className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-black/30 text-white p-3 md:p-2 rounded-full hover:bg-black/50 transition-colors"
+        aria-label="Next slide"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-4 w-4"
+          className="h-5 w-5 md:h-4 md:w-4"
           viewBox="0 0 24 24"
           fill="white"
         >
           <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
         </svg>
       </button>
-      <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex space-x-1">
+
+      {/* Indicators */}
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
         {images.map((_, index) => (
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-2 h-2 rounded-full transition-all ${
+            className={`w-3 h-3 md:w-2 md:h-2 rounded-full transition-all ${
               currentSlide === index ? "bg-white" : "bg-white/50"
             }`}
+            aria-label={`Go to slide ${index + 1}`}
           />
         ))}
       </div>
