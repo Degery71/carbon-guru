@@ -12,9 +12,7 @@ export default function Card() {
           {/* top menu */}
           <BurgerMenu />
           <div className="m-4 flex flex-col items-center">
-            <div className="[font-family:'Coda_Caption-ExtraBold',Helvetica] font-extrabold text-white text-[28px] ">
-              CARTA
-            </div>
+            <div className="font-extrabold text-white text-[28px] ">CARTA</div>
             <div className="flex flex-wrap justify-center content-center gap-8">
               <Link href={"/carta/pinchos"} className="contain-content">
                 <Image

@@ -30,7 +30,7 @@ export const BurgerMenu = () => {
         </div>
 
         <Link
-          className="[font-family:'Coda_Caption-ExtraBold',Helvetica] font-extrabold text-white text-[28px] content-center"
+          className=" font-extrabold text-white text-[28px] content-center"
           href="/"
         >
           {" "}
@@ -49,7 +49,7 @@ export const BurgerMenu = () => {
           {links.map((link: string) => (
             <Link
               key={link}
-              className="[font-family:'Coda_Caption-ExtraBold',Helvetica] font-extrabold text-white text-[28px] border-b-2 border-black"
+              className=" font-extrabold text-white text-[28px] border-b-2 border-black"
               href={`#${link}`}
             >
               {link}
