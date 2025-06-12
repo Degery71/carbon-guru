@@ -3,69 +3,51 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Card() {
+  const menuItems = [
+    { href: "/carta/pinchos", src: "/pincho1.jpg", alt: "Pinchos" },
+    { href: "/carta/compartir", src: "/compartir.png", alt: "Para Compartir" },
+    { href: "/carta/ensaladas", src: "/ensalada.jpg", alt: "Ensaladas" },
+    { href: "/carta/picar", src: "/picar.jpg", alt: "Para Picar" },
+    { href: "/carta/postres", src: "/pincho.jpg", alt: "Postres" },
+    { href: "/carta/beber", src: "/beber.jpg", alt: "Para Beber" },
+  ];
+
   return (
-    <>
-      {/* mobile frame */}
-      <div className="bg-white overflow-hidden h-full">
-        {/* background  */}
-        <div className="min-h-full min-w-full bg-pal-grey flex flex-col items-center">
-          {/* top menu */}
-          <BurgerMenu />
-          <div className="m-4 flex flex-col items-center">
-            <div className="font-extrabold text-white text-[28px] ">CARTA</div>
-            <div className="flex flex-wrap justify-center content-center gap-8">
-              <Link href={"/carta/pinchos"} className="contain-content">
-                <Image
-                  src="/pincho1.jpg"
-                  width={400}
-                  height={400}
-                  alt="Pinchos"
-                />
+    <div className="bg-white overflow-hidden h-full">
+      <div className="min-h-full min-w-full bg-pal-grey flex flex-col items-center">
+        <BurgerMenu />
+        <div className="m-4 flex flex-col items-center w-full max-w-6xl px-4">
+          <h1 className="font-extrabold text-white text-[28px] mb-6">CARTA</h1>
+
+          {/* If we use footer */}
+          {/* <div className="flex flex-wrap justify-center gap-4 w-full min-h-[calc(100vh-200px)]"> */}
+          <div className="flex flex-wrap justify-center gap-4 w-full min-h-[calc(100vh)]">
+            {menuItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="flex-[1_0_calc(50%-8px)] sm:flex-[1_0_calc(33.333%-11px)] md:flex-[1_0_calc(25%-12px)] lg:flex-[1_0_calc(16.666%-13px)] aspect-square max-w-[400px]"
+              >
+                <div className="relative w-full h-full overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:z-10">
+                  <Image
+                    src={item.src}
+                    alt={item.alt}
+                    fill
+                    className="object-cover transition-transform duration-500 hover:scale-110"
+                    sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 16vw"
+                  />
+                  {/* Optional overlay */}
+                  <div className="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span className="text-white font-bold text-lg tracking-wide uppercase">
+                      {item.alt}
+                    </span>
+                  </div>
+                </div>
               </Link>
-              <Link href={"/carta/compartir"} className="contain-content">
-                <Image
-                  src="/compartir.png"
-                  width={400}
-                  height={400}
-                  alt="Para Compartir"
-                />
-              </Link>
-              <Link href={"/carta/ensaladas"} className="contain-content">
-                <Image
-                  src="/ensalada.jpg"
-                  width={400}
-                  height={400}
-                  alt="Ensaladas"
-                />
-              </Link>
-              <Link href={"/carta/picar"} className="contain-content">
-                <Image
-                  src="/picar.jpg"
-                  width={400}
-                  height={400}
-                  alt="Para Picar"
-                />
-              </Link>
-              <Link href={"/carta/postres"} className="contain-content">
-                <Image
-                  src="/pincho.jpg"
-                  width={400}
-                  height={400}
-                  alt="Postres"
-                />
-              </Link>
-              <Link href={"/carta/beber"} className="contain-content">
-                <Image
-                  src="/beber.jpg"
-                  width={400}
-                  height={400}
-                  alt="Para Beber"
-                />
-              </Link>
-            </div>
+            ))}
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
