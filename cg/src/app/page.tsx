@@ -4,21 +4,22 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
+  const restaurantImages = ["/1.jpg", "/2.jpg", "/3.jpg"];
+  const foodImages = ["/1.jpg", "/2.jpg", "/3.jpg"];
+
   return (
     <div className="bg-white w-full min-h-screen">
       <div className="min-h-screen bg-pal-grey flex flex-col items-center">
         {/* Top menu */}
         <BurgerMenu />
 
-        {/* Carousel */}
-        <div className="w-full max-w-6xl px-4">
-          <AutoCarousel />
-        </div>
+        {/* Restaurant Carousel */}
+        <AutoCarousel images={restaurantImages} />
 
         {/* Main content */}
         <div className="w-full max-w-3xl px-4 flex flex-col items-center">
-          {/* COMIDA CALLEJERA section */}
-          <section className="w-full text-center mt-6 md:mt-8">
+          {/* Food section */}
+          <section className="w-full text-center mt-4 md:mt-8">
             <h1 className="font-bold text-white text-4xl md:text-5xl tracking-wide mb-4">
               ¿Te apetecen unos pinchos a la brasa?
             </h1>
@@ -84,7 +85,7 @@ export default function Home() {
             </Link>
           </section>
 
-          {/* Food section */}
+          {/* Card section */}
           <section className="w-full text-center mt-4 mb-4">
             <h1 className="font-bold text-white text-4xl md:text-5xl tracking-wide mb-4">
               ¿Qué te apetece probar hoy?
@@ -102,6 +103,8 @@ export default function Home() {
               dejaran chupandote los dedos.
             </p>
           </section>
+          {/* Carousel */}
+          <AutoCarousel images={foodImages} />
           <div className="w-full max-w-xl my-4 md:my-8">
             <div className="relative aspect-video w-full rounded-xl overflow-hidden border-2 border-white/30">
               <Image
