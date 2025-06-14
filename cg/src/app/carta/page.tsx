@@ -4,8 +4,12 @@ import Link from "next/link";
 
 export default function Carta() {
   const menuItems = [
-    { href: "/carta/pinchos", src: "/pincho1.jpg", alt: "Pinchos" },
-    { href: "/carta/compartir", src: "/compartir.png", alt: "Para Compartir" },
+    { href: "/carta/pinchos", src: "/pinchos.jpeg", alt: "Pinchos" },
+    {
+      href: "/carta/compartir",
+      src: "/salchipapa.jpeg",
+      alt: "Para Compartir",
+    },
     { href: "/carta/ensaladas", src: "/ensalada.jpg", alt: "Ensaladas" },
     { href: "/carta/picar", src: "/picar.jpg", alt: "Para Picar" },
     { href: "/carta/postres", src: "/pincho.jpg", alt: "Postres" },
