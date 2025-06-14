@@ -9,6 +9,7 @@ export default function Card() {
       item: "PLÁTANO MADURO CON QUESO/ RIPE BANANA WITH CHEESE",
       price: "4,00€",
       description:
+        "Delicioso plátano maduro frito con queso/ delicius fried ripe platain with cheese.",
     },
     {
       src: "/salchipapa.jpeg",
