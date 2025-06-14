@@ -12,7 +12,7 @@ export default function Home() {
     "/maduro.jpeg",
     "/ceviche.jpeg",
     "/morcilla.jpeg",
-    "/pinchos.jpeg",
+    "/pinchos/pinchos.jpeg",
   ];
 
   return (
