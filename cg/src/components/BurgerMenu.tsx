@@ -12,7 +12,7 @@ export const BurgerMenu = () => {
     setIsOpen(!isOpen);
   };
   // anchors to different parts of the text
-  const links = ["Carta", "Donde Encontrarnos", "Link3"];
+  const links = ["Carta", "Donde Estamos", "Link3"];
 
   return (
     <div className="flex flex-col w-full">
