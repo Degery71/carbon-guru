@@ -27,6 +27,8 @@ export const MenuItemList = ({ items }: Props) => {
               width={400}
               height={400}
               alt={menuItem.alt}
+              placeholder="blur"
+              // onError={}
               className="object-cover max-w-full h-auto rounded-lg"
             />
           </div>
