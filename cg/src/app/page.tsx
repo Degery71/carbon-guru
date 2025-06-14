@@ -4,8 +4,16 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-  const restaurantImages = ["/1.jpg", "/2.jpg", "/3.jpg"];
-  const foodImages = ["/1.jpg", "/2.jpg", "/3.jpg"];
+  const restaurantImages = ["/1.jpeg", "/2.jpeg", "/3.jpeg"];
+  const foodImages = [
+    "/salchipapa.jpeg",
+    "/perrito.jpeg",
+    "/perrito1.jpeg",
+    "/maduro.jpeg",
+    "/ceviche.jpeg",
+    "/morcilla.jpeg",
+    "/pinchos.jpeg",
+  ];
 
   return (
     <div className="bg-white w-full min-h-screen">
