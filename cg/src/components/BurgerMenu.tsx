@@ -11,7 +11,7 @@ export const BurgerMenu = () => {
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
-  // anchors to different parts of the text
+  // Links
   const links = ["Carta", "Donde Estamos", "Link3"];
 
   return (
