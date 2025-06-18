@@ -34,7 +34,7 @@ export const BurgerMenu = () => {
           href="/"
         >
           {" "}
-          CARBÓN GURU
+          CARBÓN GURÚ
         </Link>
 
         <Link

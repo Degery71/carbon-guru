@@ -3,7 +3,7 @@ import "./globals.css";
 
 import { Oswald } from "next/font/google";
 export const metadata: Metadata = {
-  title: "CARBÓN GURU",
+  title: "CARBÓN GURÚ",
   description: "Comida callejera",
 };
 

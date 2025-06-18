@@ -36,7 +36,8 @@ export default function Home() {
               más autentico sazón latino a un precio imbatible, todos traidos
               desde diferentes partes de latinoamerica hasta tu mesa para que
               puedas degustar tal y como los podrías probar en cualquier
-              restaurante de Colombia, Venezuela, Brasil y muchos más!
+              restaurante de Puerto Rico, Republica Dominicana, Brasil,
+              Colombia, Venezuela y muchos más!
             </p>
             <Link
               href={"/donde-estamos"}
@@ -101,14 +102,15 @@ export default function Home() {
             <p className="font-normal text-white text-xl md:text-base leading-relaxed max-w-2xl mx-auto">
               Hmmmm... tal vez te gustaría nuestro delicioso
               salchipapa/choripapa con salchichas/chorizos y papas de la más
-              alta calidad, además nuestra sabrosisima triada de salsas caseras.
-              ¿O tal vez seas mas de perrito? Si es así, prueba nuestro perrito
-              especial preparado por nuestros expertos cocineros que saben como
-              darle ese toque especial que tanto te gusta. Igual te gustan los
-              sabores más criollos, prueba entonces el combo de nuestro dulce
-              plátano macho maduro que tan bién contrasta con los matices
-              citricos de nuestro un ceviche de chicharrón que sabemos que te
-              dejaran chupandote los dedos.
+              alta calidad, además de nuestra sabrosisima triada de salsas
+              caseras. ¿O tal vez seas mas de perrito? Si es así, prueba nuestro
+              perrito especial preparado por nuestros cocineros que saben como
+              darle ese toque especial que te sorprenderá. Igual te gustan los
+              sabores más unicos, prueba entonces el combo de nuestro dulce
+              plátano macho maduro con queso mozzarella. Si por el contrario te
+              apetece algo más fresco prueba los matices citricos de nuestro un
+              ceviche de chicharrón que sabemos que te dejará chupandote los
+              dedos.
             </p>
           </section>
           {/* Carousel */}
