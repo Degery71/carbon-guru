@@ -38,7 +38,7 @@ const AutoCarousel = ({ images }: AutoCarouselProps) => {
 
   return (
     <div
-      className="relative aspect-square w-full h-full max-w-[600px] overflow-hidden"
+      className="relative aspect-square w-full h-full max-w-[600px] rounded-md overflow-hidden"
       // onMouseEnter={handleMouseEnter}
       // onMouseLeave={handleMouseLeave}
       onTouchStart={handleMouseEnter}
