@@ -7,9 +7,11 @@ type AutoCarouselProps = {
 };
 
 const AutoCarousel = ({ images }: AutoCarouselProps) => {
+  // State management
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
 
+  // Navigation functions
   const goToNextSlide = useCallback(() => {
     if (!isPaused) {
       setCurrentSlide((prev) => (prev === images.length - 1 ? 0 : prev + 1));
@@ -24,23 +26,25 @@ const AutoCarousel = ({ images }: AutoCarouselProps) => {
     setCurrentSlide(index);
   };
 
+  // Auto-rotation effect
   useEffect(() => {
     const interval = setInterval(goToNextSlide, 5000);
     return () => clearInterval(interval);
   }, [goToNextSlide]);
 
-  // Pause on hover
+  // // Pause functionality
   const handleMouseEnter = () => setIsPaused(true);
   const handleMouseLeave = () => setIsPaused(false);
 
   return (
     <div
-      className="relative w-full aspect-video max-h-[70vh] overflow-hidden"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+      className="relative aspect-square w-full h-full max-w-[600px] overflow-hidden"
+      // onMouseEnter={handleMouseEnter}
+      // onMouseLeave={handleMouseLeave}
       onTouchStart={handleMouseEnter}
       onTouchEnd={handleMouseLeave}
     >
+      {/* Slides container */}
       <div
         className="flex transition-transform duration-700 ease-in-out h-full"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -59,9 +63,10 @@ const AutoCarousel = ({ images }: AutoCarouselProps) => {
         ))}
       </div>
 
-      {/* Navigation buttons */}
+      {/* Navigation controls */}
       {images.length > 1 && (
         <>
+          {/* Previous button */}
           <button
             onClick={goToPrevSlide}
             className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-black/30 text-white p-3 md:p-2 rounded-full hover:bg-black/50 transition-colors backdrop-blur-sm"
@@ -76,6 +81,8 @@ const AutoCarousel = ({ images }: AutoCarouselProps) => {
               <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
             </svg>
           </button>
+
+          {/* Next button */}
           <button
             onClick={goToNextSlide}
             className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-black/30 text-white p-3 md:p-2 rounded-full hover:bg-black/50 transition-colors backdrop-blur-sm"
@@ -91,7 +98,7 @@ const AutoCarousel = ({ images }: AutoCarouselProps) => {
             </svg>
           </button>
 
-          {/* Indicators */}
+          {/* Slide indicators */}
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
             {images.map((_, index) => (
               <button

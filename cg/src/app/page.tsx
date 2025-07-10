@@ -6,12 +6,12 @@ import Link from "next/link";
 export default function Home() {
   const restaurantImages = ["/1.jpeg", "/2.jpeg", "/3.jpeg"];
   const foodImages = [
-    "/salchipapa.jpeg",
-    "/perrito.jpeg",
-    "/perrito1.jpeg",
-    "/maduro.jpeg",
-    "/ceviche.jpeg",
-    "/morcilla.jpeg",
+    "/compartir/salchipapa.jpeg",
+    "/compartir/perrito.jpeg",
+    "/compartir/perrito1.jpeg",
+    "/compartir/maduro.jpeg",
+    "/compartir/ceviche.jpeg",
+    "/compartir/morcilla.jpeg",
     "/pinchos/pinchos.jpeg",
   ];
 
@@ -118,7 +118,7 @@ export default function Home() {
           <div className="w-full max-w-xl my-4 md:my-8">
             <div className="relative aspect-video w-full rounded-xl overflow-hidden border-2 border-white/30">
               <Image
-                src="/pincho.jpg"
+                src="/compartir/salchipapa.jpeg"
                 fill={true}
                 alt="Street food pincho"
                 className="object-cover"
