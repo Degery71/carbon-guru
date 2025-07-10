@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Carta() {
   const menuItems = [
-    { href: "/carta/pinchos", src: "/pinchos.jpeg", alt: "Pinchos" },
+    { href: "/carta/pinchos", src: "/pinchos/pinchos.jpeg", alt: "Pinchos" },
     {
       href: "/carta/compartir",
       src: "/salchipapa.jpeg",
