@@ -10,14 +10,22 @@ export default function Carta() {
       src: "/salchipapa.jpeg",
       alt: "Para Compartir",
     },
+    // {
+    //   href: "/carta/ensaladas",
+    //   src: "/ensaladas/ensalada.jpg",
+    //   alt: "Ensaladas",
+    // },
     {
       href: "/carta/ensaladas",
-      src: "/ensaladas/ensalada.jpg",
+      src: "/placeholder.png",
       alt: "Ensaladas",
     },
-    { href: "/carta/picar", src: "/picar/picar.jpg", alt: "Para Picar" },
-    { href: "/carta/postres", src: "/pinchos/pinchos.jpeg", alt: "Postres" },
-    { href: "/carta/beber", src: "/beber/beber.jpg", alt: "Para Beber" },
+    // { href: "/carta/picar", src: "/picar/picar.jpg", alt: "Para Picar" },
+    // { href: "/carta/postres", src: "/pinchos/pinchos.jpeg", alt: "Postres" },
+    // { href: "/carta/beber", src: "/beber/beber.jpg", alt: "Para Beber" },
+    { href: "/carta/picar", src: "/placeholder.png", alt: "Para Picar" },
+    { href: "/carta/postres", src: "/placeholder.png", alt: "Postres" },
+    { href: "/carta/beber", src: "/placeholder.png", alt: "Para Beber" },
   ];
 
   return (
