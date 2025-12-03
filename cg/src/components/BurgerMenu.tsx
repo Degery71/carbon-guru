@@ -12,7 +12,7 @@ export const BurgerMenu = () => {
     setIsOpen(!isOpen);
   };
   // Links
-  const links = ["Carta", "Donde Estamos", "Link3"];
+  const links = ["Carta", "Donde Estamos"];
 
   return (
     <div className="flex flex-col w-full">
