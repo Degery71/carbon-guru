@@ -7,7 +7,7 @@ export default function Carta() {
     { href: "/carta/pinchos", src: "/pinchos/pinchos.jpeg", alt: "Pinchos" },
     {
       href: "/carta/compartir",
-      src: "/salchipapa.jpeg",
+      src: "/compartir/salchipapa.jpeg",
       alt: "Para Compartir",
     },
     // {
