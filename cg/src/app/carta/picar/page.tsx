@@ -1,37 +1,8 @@
 import { BurgerMenu } from "@/components/BurgerMenu";
 import { MenuItemList } from "@/components/MenuItemList";
+import { items } from "./items";
 
 export default function Card() {
-  const items = [
-    {
-      src: "/picar/mazorca.jpeg",
-      alt: "MAZORCA/ COB",
-      item: "MAZORCA/ COB",
-      price: "3,00€",
-      description: "",
-    },
-    {
-      src: "/picar/batata.jpeg",
-      alt: "BATATA/ SWEET POTATO",
-      item: "BATATA/ SWEET POTATO",
-      price: "3,50€",
-      description: "",
-    },
-    {
-      src: "/picar/yuca.jpeg",
-      alt: "YUCA/ YUCCA",
-      item: "YUCA/ YUCCA",
-      price: "3,50€",
-      description: "",
-    },
-    {
-      src: "/picar/patacon.jpeg",
-      alt: "PATACÓN",
-      item: "PATACÓN",
-      price: "3,50€",
-      description: "",
-    },
-  ];
   return (
     <>
       {/* mobile frame */}
