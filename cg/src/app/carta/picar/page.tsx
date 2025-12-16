@@ -4,28 +4,28 @@ import { MenuItemList } from "@/components/MenuItemList";
 export default function Card() {
   const items = [
     {
-      src: "/maduro.jpeg",
+      src: "/picar/mazorca.jpeg",
       alt: "MAZORCA/ COB",
       item: "MAZORCA/ COB",
       price: "3,00€",
       description: "",
     },
     {
-      src: "/salchipapa.jpeg",
+      src: "/picar/batata.jpeg",
       alt: "BATATA/ SWEET POTATO",
       item: "BATATA/ SWEET POTATO",
       price: "3,50€",
       description: "",
     },
     {
-      src: "/salchipapa.jpeg",
+      src: "/picar/yuca.jpeg",
       alt: "YUCA/ YUCCA",
       item: "YUCA/ YUCCA",
       price: "3,50€",
       description: "",
     },
     {
-      src: "/salchipapa.jpeg",
+      src: "/picar/patacon.jpeg",
       alt: "PATACÓN",
       item: "PATACÓN",
       price: "3,50€",

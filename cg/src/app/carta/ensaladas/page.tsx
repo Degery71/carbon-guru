@@ -4,7 +4,7 @@ import { MenuItemList } from "@/components/MenuItemList";
 export default function Card() {
   const items = [
     {
-      src: "/maduro.jpeg",
+      src: "/ensaladas/tomate-y-cebolla.jpeg",
       alt: "ENSALADA DE TOMATE Y CEBOLLA/ TOMATO AND ONION SALAD",
       item: "ENSALADA DE TOMATE Y CEBOLLA/ TOMATO AND ONION SALAD",
       price: "3,60€",

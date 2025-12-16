@@ -16,7 +16,7 @@ export const BurgerMenu = () => {
 
   return (
     <div className="flex flex-col w-full">
-      <div className="h-16 min-h-full flex justify-around content-center border-b-2 bg-pal-dark sticky top-0 z-20">
+      <div className="h-16 min-h-full flex justify-around content-center border-b-2 border-yellow-400 bg-pal-dark sticky top-0 z-20">
         {/* Burger Logo */}
         <div
           className="flex items-center justify-center"
@@ -49,7 +49,7 @@ export const BurgerMenu = () => {
           {links.map((link: string) => (
             <Link
               key={link}
-              className="font-extrabold text-white text-[28px] border-b-2 border-black"
+              className="font-extrabold text-white text-[28px] border-b-2 border-yellow-400"
               href={`/${link.toLowerCase().replace(/\s+/g, "-")}`}
             >
               {link}

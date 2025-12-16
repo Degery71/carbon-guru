@@ -17,15 +17,23 @@ export default function Carta() {
     // },
     {
       href: "/carta/ensaladas",
-      src: "/placeholder.png",
+      src: "/ensaladas/tomate-y-cebolla.jpeg",
       alt: "Ensaladas",
     },
     // { href: "/carta/picar", src: "/picar/picar.jpg", alt: "Para Picar" },
     // { href: "/carta/postres", src: "/pinchos/pinchos.jpeg", alt: "Postres" },
     // { href: "/carta/beber", src: "/beber/beber.jpg", alt: "Para Beber" },
-    { href: "/carta/picar", src: "/placeholder.png", alt: "Para Picar" },
-    { href: "/carta/postres", src: "/placeholder.png", alt: "Postres" },
-    { href: "/carta/beber", src: "/placeholder.png", alt: "Para Beber" },
+    {
+      href: "/carta/picar",
+      src: "/picar/batata.jpeg",
+      alt: "Para Picar",
+    },
+    // { href: "/carta/postres", src: "/placeholder.png", alt: "Postres" },
+    {
+      href: "/carta/beber",
+      src: "/beber/aguas-frescas.jpeg",
+      alt: "Para Beber",
+    },
   ];
 
   return (
