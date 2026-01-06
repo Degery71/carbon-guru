@@ -7,7 +7,8 @@ export const items = [
     description: "",
   },
   {
-    src: "/salchipapa.jpeg",
+    // src: "/salchipapa.jpeg",
+    src: "/placeholder.png",
     alt: "ENSALADA DE COL/ COLESLAW",
     item: "ENSALADA DE COL/ COLESLAW",
     price: "3,80€",

@@ -14,7 +14,8 @@ export const items = [
     description: "",
   },
   {
-    src: "/picar/yuca.jpeg",
+    // src: "/picar/yuca.jpeg",
+    src: "/placeholder.png",
     alt: "YUCA/ YUCCA",
     item: "YUCA/ YUCCA",
     price: "3,50€",
