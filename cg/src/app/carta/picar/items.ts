@@ -10,7 +10,7 @@ export const items = [
     src: "/picar/batata.jpeg",
     alt: "BATATA/ SWEET POTATO",
     item: "BATATA/ SWEET POTATO",
-    price: "3,50€",
+    price: "4,00€",
     description: "",
   },
   {
@@ -18,21 +18,21 @@ export const items = [
     src: "/placeholder.png",
     alt: "YUCA/ YUCCA",
     item: "YUCA/ YUCCA",
-    price: "3,50€",
+    price: "4,00€",
     description: "",
   },
   {
     src: "/picar/patacon.jpeg",
     alt: "PATACÓN",
     item: "PATACÓN",
-    price: "3,50€",
+    price: "4,00€",
     description: "",
   },
   {
     src: "/picar/papas.jpeg",
     alt: "PAPA COCIDA",
     item: "PAPA COCIDA",
-    price: "3,50€",
+    price: "4,00€",
     description: "",
   },
 ];
