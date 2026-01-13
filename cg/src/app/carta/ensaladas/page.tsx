@@ -6,9 +6,9 @@ export default function Card() {
   return (
     <>
       {/* mobile frame */}
-      <div className="bg-white overflow-hidden h-full">
+      <div className="bg-white overflow-hidden min-h-screen">
         {/* background  */}
-        <div className="min-h-full min-w-full bg-pal-grey flex flex-col items-center">
+        <div className="min-h-screen w-full bg-pal-grey flex flex-col items-center">
           {/* top menu */}
           <BurgerMenu />
           <div className="m-4 flex flex-col items-center">

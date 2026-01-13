@@ -57,14 +57,14 @@ export const items = [
     description:
       "Morcilla a la brasa acompañada de nuestra salsa especial y papas cocidas/ grilled blood sausage accompanied by our special sauce and bolied potatoes.",
   },
-  {
-    src: "/compartir/ceviche.jpeg",
-    alt: "CEVICHE DE CHICHARRÓN",
-    item: "CEVICHE DE CHICHARRÓN",
-    price: "9,00€",
-    description:
-      "Panceta de cerdo marinada en zumo de limón y cocidas a la brasa, añadiendo tomate, cilantro y cebolla morada con nuestra salsa especial/ prok belly marinated in lemon juice and grilled, adding tomato, coriander and onion with our special.",
-  },
+  // {
+  //   src: "/compartir/ceviche.jpeg",
+  //   alt: "CEVICHE DE CHICHARRÓN",
+  //   item: "CEVICHE DE CHICHARRÓN",
+  //   price: "9,00€",
+  //   description:
+  //     "Panceta de cerdo marinada en zumo de limón y cocidas a la brasa, añadiendo tomate, cilantro y cebolla morada con nuestra salsa especial/ prok belly marinated in lemon juice and grilled, adding tomato, coriander and onion with our special.",
+  // },
   {
     src: "/compartir/coctel.jpeg",
     alt: "Cóctel de camarón/ Shrimp cocktail",
