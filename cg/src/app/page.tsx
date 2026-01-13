@@ -15,7 +15,6 @@ export default function Home() {
   const foodImages = [
     "/compartir/salchipapa.jpeg",
     "/compartir/perrito.jpeg",
-    "/compartir/perrito1.jpeg",
     "/compartir/maduro.jpeg",
     "/compartir/ceviche.jpeg",
     "/compartir/morcilla.jpeg",
