@@ -25,15 +25,15 @@ export const BurgerMenu = () => {
           aria-expanded={isOpen}
         >
           {!isOpen ? (
-            <GiHamburgerMenu 
-              size={32} 
-              color="white" 
+            <GiHamburgerMenu
+              size={32}
+              color="white"
               className="align-middle transition-transform duration-500"
             />
           ) : (
-            <IoCloseSharp 
-              size={32} 
-              color="white" 
+            <IoCloseSharp
+              size={32}
+              color="white"
               className="align-middle transition-transform duration-500 rotate-90"
             />
           )}

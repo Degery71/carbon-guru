@@ -81,12 +81,12 @@ export const items = [
     description:
       "Langostinos frescos salteados con cebolla morada, pimiento y ajo en una suave salsa de leche de coco con cilantro fresco acompañado de crukientes / Fresh prawns sautéed with red onion, pepper and garlic in a smooth coconut milk sauce with fresh coriander.",
   },
-  {
-    src: "/compartir/placeholder.png",
-    alt: "JALEA MIXTA/ MIXED FRIED SEAFOOD",
-    item: "JALEA MIXTA/ MIXED FRIED SEAFOOD",
-    price: "10,00€",
-    description:
-      "alea mixta, una selección de mariscos frescos fritos a la perfección, crujientes por fuera y tiernos por dentro, acompañados de salsa tártara casera, rodajas de limón fresco y acompañada de yuca/ Mixed fried seafood, a selection of fresh seafood fried to perfection, crispy on the outside and tender on the inside, served with homemade tartar sauce, fresh lemon slices and accompanied by yucca.",
-  },
+  // {
+  //   src: "/compartir/placeholder.png",
+  //   alt: "JALEA MIXTA/ MIXED FRIED SEAFOOD",
+  //   item: "JALEA MIXTA/ MIXED FRIED SEAFOOD",
+  //   price: "10,00€",
+  //   description:
+  //     "alea mixta, una selección de mariscos frescos fritos a la perfección, crujientes por fuera y tiernos por dentro, acompañados de salsa tártara casera, rodajas de limón fresco y acompañada de yuca/ Mixed fried seafood, a selection of fresh seafood fried to perfection, crispy on the outside and tender on the inside, served with homemade tartar sauce, fresh lemon slices and accompanied by yucca.",
+  // },
 ];
