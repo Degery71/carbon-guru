@@ -1,17 +1,11 @@
 import AutoCarousel from "@/components/AutoCarousel";
 import { BurgerMenu } from "@/components/BurgerMenu";
-import Image from "next/image";
+import { LOCATIONS } from "@/data/locations";
 import Link from "next/link";
 
 export default function Home() {
-  const restaurantImages = [
-    "/1.jpeg",
-    "/2.jpeg",
-    "/3.jpeg",
-    "/4.jpeg",
-    "/5.jpeg",
-    "/6.jpeg",
-  ];
+  const restaurantImages1 = ["/1.jpeg", "/2.jpeg", "/3.jpeg"];
+  const restaurantImages2 = ["/4.jpeg", "/5.jpeg", "/6.jpeg"];
   const foodImages = [
     "/compartir/salchipapa.jpeg",
     "/compartir/perrito.jpeg",
@@ -27,118 +21,169 @@ export default function Home() {
         {/* Top menu */}
         <BurgerMenu />
 
-        {/* Restaurant Carousel */}
-        <AutoCarousel images={restaurantImages} />
+        {/* Header Section */}
+        <div className="w-full max-w-5xl px-4 py-8 md:py-12">
+          <h1 className="text-center text-white text-5xl md:text-6xl font-bold tracking-wide mb-2">
+            CARBÓN GURÚ
+          </h1>
+          <p className="text-center text-white/70 text-lg md:text-xl">
+            Auténticos Sabores Latinos
+          </p>
+        </div>
+
+        {/* Two Column Layout */}
+        <div className="w-full max-w-6xl px-4 grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          {/* Left - Carousel 1 */}
+          <div className="flex flex-col items-center">
+            <AutoCarousel images={restaurantImages1} />
+            <div className="mt-4 text-center">
+              <h3 className="text-white text-xl font-bold">
+                {LOCATIONS[0].name}
+              </h3>
+              <p className="text-white/60 text-sm mt-1">
+                {LOCATIONS[0].address}
+              </p>
+              {/* <p className="text-white/60 text-sm">{LOCATIONS[0].phone}</p> */}
+            </div>
+          </div>
+
+          {/* Right - Carousel 2 */}
+          <div className="flex flex-col items-center">
+            <AutoCarousel images={restaurantImages2} />
+            <div className="mt-4 text-center">
+              <h3 className="text-white text-xl font-bold">
+                {LOCATIONS[1].name}
+              </h3>
+              <p className="text-white/60 text-sm mt-1">
+                {LOCATIONS[1].address}
+              </p>
+              {/* <p className="text-white/60 text-sm">{LOCATIONS[1].phone}</p> */}
+            </div>
+          </div>
+        </div>
 
         {/* Main content */}
-        <div className="w-full max-w-3xl px-4 flex flex-col items-center">
-          {/* Food section */}
-          <section className="w-full text-center mt-4 md:mt-8">
-            <h1 className="font-bold text-white text-4xl md:text-5xl tracking-wide mb-4">
+        <div className="w-full max-w-4xl px-4 flex flex-col items-center">
+          {/* Featured Section */}
+          <section className="w-full rounded-lg p-6 md:p-8 bg-white/5 border-2 border-yellow-300 backdrop-blur-sm mb-8">
+            <h2 className="text-white text-3xl md:text-4xl font-bold mb-4">
               ¿Te apetecen unos pinchos a la brasa?
-            </h1>
-            <p className="font-normal text-white text-xl md:text-base leading-relaxed max-w-2xl mx-auto">
+            </h2>
+            <p className="text-white/80 text-base md:text-lg leading-relaxed mb-6">
               En nuestro local podrás probar una gran variedad de platos con el
-              más autentico sazón latino a un precio imbatible, todos traidos
-              desde diferentes partes de latinoamerica hasta tu mesa para que
-              puedas degustar tal y como los podrías probar en cualquier
-              restaurante de Puerto Rico, Republica Dominicana, Brasil,
-              Colombia, Venezuela y muchos más!
+              más autentico sazón latino a un precio imbatible. Todos traídos
+              desde diferentes partes de latinoamérica hasta tu mesa.
             </p>
             <Link
               href={"/donde-estamos"}
-              className="group block max-w-2xl mx-auto mt-8 p-4 md:p-6 bg-black/30 backdrop-blur-sm border-2 border-yellow-500/50 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:border-yellow-400 hover:bg-black/40 transform hover:-translate-y-1"
+              className="inline-block px-8 py-3 bg-white/10 border-2 border-yellow-300 text-white rounded-lg hover:bg-white/20 transition-all duration-300 font-semibold"
             >
-              <div className="flex items-start">
-                <div className="mr-3 mt-1 text-yellow-400 group-hover:text-yellow-300 transition-colors">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                  </svg>
-                </div>
-                <p className="text-white font-medium text-lg md:text-xl italic leading-relaxed group-hover:text-yellow-50 transition-colors">
-                  Acercate a nuestro local y atrevete a probar los sabores más
-                  <span className=" m-2 not-italic font-bold text-yellow-400 group-hover:text-yellow-300 transition-colors">
-                    latinos de Gran Canaria.
-                  </span>
-                </p>
-              </div>
-
-              <div className="mt-4 flex justify-end">
-                <span className="inline-flex items-center text-yellow-400 font-semibold group-hover:text-yellow-300 transition-colors">
-                  Descubre nuestra ubicación
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 ml-1 group-hover:translate-x-1 transition-transform"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </span>
-              </div>
+              Ubicación
             </Link>
           </section>
 
-          {/* Card section */}
-          <section className="w-full text-center mt-4 mb-4">
-            <h1 className="font-bold text-white text-4xl md:text-5xl tracking-wide mb-4">
-              ¿Qué te apetece probar hoy?
-            </h1>
-            <p className="font-normal text-white text-xl md:text-base leading-relaxed max-w-2xl mx-auto">
-              Hmmmm... tal vez te gustaría nuestro delicioso
-              salchipapa/choripapa con salchichas/chorizos y papas de la más
-              alta calidad, además de nuestra sabrosisima triada de salsas
-              caseras. ¿O tal vez seas mas de perrito? Si es así, prueba nuestro
-              perrito especial preparado por nuestros cocineros que saben como
-              darle ese toque especial que te sorprenderá. Igual te gustan los
-              sabores más unicos, prueba entonces el combo de nuestro dulce
-              plátano macho maduro con queso mozzarella. Si por el contrario te
-              apetece algo más fresco prueba los matices citricos de nuestro un
-              ceviche de chicharrón que sabemos que te dejará chupandote los
-              dedos.
+          {/* Food Highlights */}
+          <section className="w-full mb-8">
+            <h2 className="text-white text-3xl md:text-4xl font-bold text-center mb-4">
+              Nuestras Especialidades
+            </h2>
+            <p className="text-white/70 text-base md:text-lg leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              En Carbon Guru hemos seleccionado cuidadosamente nuestras
+              especialidades más icónicas, traídas desde los rincones más
+              auténticos de Latinoamérica. Cada plato es una experiencia
+              culinaria que combina ingredientes de la más alta calidad con
+              recetas tradicionales preparadas por nuestros expertos cocineros.
+              Desde Puerto Rico hasta Colombia, pasando por Brasil y Venezuela,
+              te invitamos a un viaje gastronómico que despertará tus sentidos.
             </p>
-          </section>
-          {/* Carousel */}
-          <AutoCarousel images={foodImages} />
-          <div className="w-full max-w-xl my-4 md:my-8">
-            <div className="relative aspect-video w-full rounded-xl overflow-hidden border-2 border-white/30">
-              <Image
-                src="/compartir/salchipapa.jpeg"
-                fill={true}
-                alt="Street food pincho"
-                className="object-cover"
-              />
-              <Link
-                href={"/carta"}
-                className="absolute inset-0 flex items-center justify-center bg-black/30 transition-all duration-300 hover:bg-black/50"
-              >
-                <p className="text-white font-bold text-xl md:text-2xl bg-black/70 px-6 py-3 rounded-lg backdrop-blur-sm hover:scale-105 transition-transform">
-                  CARTA
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="p-6 rounded-lg bg-white/5 border-2 border-yellow-300 backdrop-blur-sm hover:bg-white/10 transition-all">
+                <h3 className="text-white text-xl font-bold mb-2">
+                  🍟 Salchipapa
+                </h3>
+                <p className="text-white/70 text-sm leading-relaxed">
+                  Delicioso combo con salchichas y chorizos premium, papas
+                  crujientes de la más alta calidad acompañadas de nuestra
+                  sabrosísima triada de salsas caseras. Un clásico que no puede
+                  faltar.
                 </p>
-              </Link>
+              </div>
+              <div className="p-6 rounded-lg bg-white/5 border-2 border-yellow-300 backdrop-blur-sm hover:bg-white/10 transition-all">
+                <h3 className="text-white text-xl font-bold mb-2">
+                  🌭 Perrito Especial
+                </h3>
+                <p className="text-white/70 text-sm leading-relaxed">
+                  Preparado por nuestros cocineros con ese toque especial que te
+                  sorprenderá en cada bocado. Pan tostado a la perfección con
+                  las mejores carnes, aderezos frescos y nuestras salsas
+                  exclusivas.
+                </p>
+              </div>
+              <div className="p-6 rounded-lg bg-white/5 border-2 border-yellow-300 backdrop-blur-sm hover:bg-white/10 transition-all">
+                <h3 className="text-white text-xl font-bold mb-2">
+                  🍌 Maduro con Queso
+                </h3>
+                <p className="text-white/70 text-sm leading-relaxed">
+                  Dulce plátano macho maduro con mozzarella derretida, una
+                  combinación única y deliciosa que fusiona lo salado con lo
+                  dulce en una experiencia inolvidable.
+                </p>
+              </div>
+              <div className="p-6 rounded-lg bg-white/5 border-2 border-yellow-300 backdrop-blur-sm hover:bg-white/10 transition-all">
+                <h3 className="text-white text-xl font-bold mb-2">
+                  🦐 Ceviche de Chicharrón
+                </h3>
+                <p className="text-white/70 text-sm leading-relaxed">
+                  Los matices cítricos de nuestro exclusivo ceviche de
+                  chicharrón que despierta el paladar. Fresco, ligero y cargado
+                  de sabor auténtico que te dejará chupándote los dedos.
+                </p>
+              </div>
+              <div className="p-6 rounded-lg bg-white/5 border-2 border-yellow-300 backdrop-blur-sm hover:bg-white/10 transition-all">
+                <h3 className="text-white text-xl font-bold mb-2">
+                  🧅 Morcilla Especial
+                </h3>
+                <p className="text-white/70 text-sm leading-relaxed">
+                  Preparada con las mejores técnicas tradicionales, nuestra
+                  morcilla es crujiente por fuera y jugosa por dentro. Un manjar
+                  para los verdaderos amantes de la cocina latina.
+                </p>
+              </div>
+              <div className="p-6 rounded-lg bg-white/5 border-2 border-yellow-300 backdrop-blur-sm hover:bg-white/10 transition-all">
+                <h3 className="text-white text-xl font-bold mb-2">
+                  🔥 Pinchos a la Brasa
+                </h3>
+                <p className="text-white/70 text-sm leading-relaxed">
+                  Nuestro plato estrella: carnes y vegetales selectos asados a
+                  la brasa con marinadas auténticas. Cada pincho es una
+                  explosión de sabor que representa la esencia de Carbon Guru.
+                </p>
+              </div>
             </div>
-          </div>
+          </section>
+
+          {/* Food Carousel Section */}
+          <section className="w-full text-center mb-8 flex flex-col items-center">
+            <h2 className="text-white text-3xl md:text-4xl font-bold mb-6">
+              Galería de Platos
+            </h2>
+            <div className="w-full flex justify-center">
+              <AutoCarousel images={foodImages} />
+            </div>
+          </section>
+
+          {/* CTA Section */}
+          <section className="w-full rounded-lg p-8 md:p-12 bg-white/5 border-2 border-yellow-300 backdrop-blur-sm text-center mb-8">
+            <h2 className="text-white text-3xl md:text-4xl font-bold mb-6">
+              Descubre Nuestra Carta Completa
+            </h2>
+            <Link
+              href={"/carta"}
+              className="inline-block px-10 py-4 bg-transparent text-yellow-300 rounded-lg hover:shadow-2xl hover:shadow-yellow-300/50 transform hover:scale-110 transition-all duration-300 font-bold text-lg border-2 border-yellow-300"
+            >
+              Ver Carta
+            </Link>
+          </section>
         </div>
       </div>
     </div>
