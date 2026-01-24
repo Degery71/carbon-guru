@@ -83,7 +83,7 @@ export default function Home() {
           </section>
 
           {/* Food Highlights */}
-          <section className="w-full mb-8">
+          {/* <section className="w-full mb-8">
             <h2 className="text-white text-3xl md:text-4xl font-bold text-center mb-4">
               Nuestras Especialidades
             </h2>
@@ -160,7 +160,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-          </section>
+          </section> */}
 
           {/* Food Carousel Section */}
           <section className="w-full text-center mb-8 flex flex-col items-center">
