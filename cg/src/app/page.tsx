@@ -78,7 +78,7 @@ export default function Home() {
               href={"/donde-estamos"}
               className="inline-block px-8 py-3 bg-white/10 border-2 border-yellow-300 text-white rounded-lg hover:bg-white/20 transition-all duration-300 font-semibold"
             >
-              Ubicación
+              Ubicaciones
             </Link>
           </section>
 
